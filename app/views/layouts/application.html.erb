@@ -2,12 +2,24 @@
 <html>
 <head>
   <title><%= full_title(yield(:title))%></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all",
+                             "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p>dynamic yield <%= full_title(yield(:title))%> </p>
+<div class="navbar">
+  <div class="container">
+    <%= link_to "Wayne.Twitter",root_path,id:"logo",
+                class:"navbar-brand"
+    %>
+    <ul class="nav nav-pills pull-right" >
+      <li><%= link_to "Home",root_path %></li>
+      <li><%= link_to "Help",help_path %></li>
+      <li><%= link_to "Sign in","#",class:"btn btn-primary btn-sm"%></li>
+    </ul>
+  </div>
+</div>
 <%= yield %>
 
 </body>

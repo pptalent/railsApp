@@ -1,0 +1,26 @@
+.home-container{
+  text-align: center;
+  padding-top:50px;
+  .wzx{
+    $width:70px;
+    display:block;
+    width:$width;
+    height:$width;
+    position:relative;
+    left:50%;
+    margin-left:$width/2*(-1);
+    border-radius:$width;
+    background:url(me.JPG)no-repeat -30px -20px;
+  }
+  h3{
+    font-size:40px;
+  }
+  p{
+    font-size:21px;
+    color:#999;
+    margin-bottom:55px;
+  }
+  .btn{
+    padding:10px 70px;
+  }
+}

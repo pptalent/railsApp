@@ -1,5 +1,5 @@
-# source 'https://ruby.taobao.org'
-source 'https://rubygems.org'
+source 'https://ruby.taobao.org'
+# source 'https://rubygems.org'
 ruby '2.0.0'
 
 
@@ -23,6 +23,7 @@ gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails','2.2.1'
+gem 'bootstrap-sass','3.1.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks','1.1.1'

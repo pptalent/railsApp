@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe  "static page " do
   describe "home page" do
-    it "should have the content 'sample app' " do
-      visit '/static_page/home'
-      expect(page).to have_content("sample app")
-    end
+    before {visit root_path}
+    subject {page}
+    it {should have_content('Wayne')}
+    it {should have_title(full_title(""))}
   end
 end

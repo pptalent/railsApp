@@ -1,0 +1,37 @@
+@import "bootstrap";
+//universal
+body{
+
+}
+//header
+.navbar{
+  $blue:#7b9fe9;
+  .navbar-brand{
+    color:#666;
+    font-size:30px;
+//    text-shadow:2px 2px 2px rgba(0,0,0,0.1);
+  }
+  border-radius:0px !important;
+  padding:13px 0px 10px;
+  border-bottom:1px solid #ddd;
+//  border-top:8px solid $blue;
+  ul{
+    position:relative;
+    top:10px;
+    right:50px;
+    li{
+      a:not(.btn){
+        color:#9d9d9d;
+      }
+      .btn{
+        padding:5px 10px;
+        margin-top:5px;
+        margin-left:10px;
+        &:hover{
+          background:#3276B1;
+        }
+      }
+    }
+
+  }
+}
