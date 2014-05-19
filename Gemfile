@@ -1,5 +1,5 @@
-source 'https://ruby.taobao.org'
-# source 'https://rubygems.org'
+# source 'https://ruby.taobao.org'
+source 'https://rubygems.org'
 ruby '2.0.0'
 
 
@@ -13,6 +13,7 @@ end
 group :test do
 	gem 'selenium-webdriver','2.35.1'
 	gem 'capybara','2.1.0'
+	gem 'factory_girl_rails','4.4.1'
 end
 
 group :production do

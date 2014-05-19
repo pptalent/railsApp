@@ -1,0 +1,8 @@
+<div class="bs-callout bs-callout-danger">
+  <h4>Opoos , you got <%= pluralize(@user.errors.count,"error") %></h4>
+  <ul>
+    <% @user.errors.full_messages.each do |error| %>
+        <li>* <%= error %></li>
+    <% end %>
+  </ul>
+</div>

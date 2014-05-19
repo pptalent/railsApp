@@ -33,4 +33,7 @@ RailsApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  #在测试环境下将加密算法追求速度而非安全性
+  ActiveModel::SecurePassword.min_cost =true
 end

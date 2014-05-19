@@ -1,0 +1,30 @@
+$orange:#f0aa3c;
+.bs-callout-danger {
+  $red:#D9534F;
+  background-color: #FDF7F7;
+  border-color: $red;
+  padding:4px 11px;
+  position:relative;
+  margin:0px 0px 10px;
+  &:before{
+    content:"";
+    background:$red;
+    width:2px;
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+  }
+  h4{
+    color:$red;
+    font-size:14px;
+  }
+  ul{
+    padding-left:0px;
+    list-style-type: none;
+    li{
+      font-size:14px;
+      color:lighten($red,10%);
+    }
+  }
+}

@@ -1,6 +1,8 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "style";
+
 .signup{
   margin-top:30px;
   width:410px;
@@ -13,5 +15,28 @@
     padding:8px 20px;
     font-size:17px;
     margin-top:21px;
+  }
+}
+.user-show{
+  padding-top:21px;
+  .user-header-left{
+    .user-avatar{
+      $width:80px;
+      border-radius:$width;
+      position:relative;
+      left:50%;
+      margin-left:$width/2*(-1);
+    }
+    .user-name{
+      text-align: center;
+      font-size:24px;
+      color:#222;
+    }
+    box-sizing:border-box;
+    width:45%;
+  }
+  .user-header-right{
+    box-sizing:border-box;
+    width:55%;
   }
 }
