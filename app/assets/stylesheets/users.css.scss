@@ -8,6 +8,9 @@
   width:410px;
   .btn{
     $width:210px;
+    &.btn-change{
+      $width:280px;
+    }
     width:$width;
     position:relative;
     left:50%;
@@ -38,5 +41,71 @@
   .user-header-right{
     box-sizing:border-box;
     width:55%;
+  }
+}
+.edit_user{
+  margin-top:30px;
+  width:410px;
+  .user-avatar{
+    $width:80px;
+    border-radius:$width;
+    position:relative;
+    left:50%;
+    margin-left:$width/2*(-1);
+  }
+  .btn-change{
+    $width:280px;
+    width:$width;
+    position:relative;
+    left:50%;
+    margin-left:$width/2*(-1);
+    padding:8px 20px;
+    font-size:17px;
+    margin-top:21px;
+  }
+  a.button{
+    position:relative;
+    top:48px;
+    left:170px;
+    &:hover{
+      background:$primary;
+    }
+    &:before{
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid $primary;
+      border-right: 10px solid transparent;
+      position:absolute;
+      top:-7px;
+      content:""
+    }
+  }
+}
+.user-all{
+  width:80%;
+  margin:5px auto 0px;
+  thead{
+    td{
+      color:#888;
+    }
+  }
+  .user-avatar{
+    $width:30px;
+    border-radius:$width;
+  }
+  .btn-follow{
+    position:relative;
+    top:2px;
+  }
+}
+.user-index-all{
+  .pagination{
+    float:right;
+    margin-right:60px;
+    &:after{
+      content:"";
+      display: block;
+      clear:all;
+    }
   }
 }

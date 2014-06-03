@@ -1,10 +1,10 @@
 <div class="container signup" style="margin-top:65px">
   <% if flash %>
     <% flash.each do |key,value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
+        <div class="alert alert-<%= key %>"><%= value %> </div>
     <% end %>
   <% end %>
-  <%= form_for(:session,url:sessions_path) do |f| %>
+  <%= form_for :session,url:sessions_path do |f| %>
     <div class="form-group">
       <%= f.label :email %>
       <%= f.text_field :email,placeholder:"Your Email",class:"form-control" %>
@@ -13,6 +13,8 @@
       <%= f.label :password %>
       <%= f.password_field :password,placeholder:"Your Password",class:"form-control" %>
     </div>
-    <%= f.submit "I'm coming",class:"btn btn-default btn-success" %>
+      <%= link_to "No account?",signup_path,class:"link-to-signup" %>
+    <%= f.submit "I'm coming",class:"btn btn-default btn-danger"%>
   <% end %>
+
 </div>

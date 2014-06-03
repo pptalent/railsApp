@@ -1,0 +1,28 @@
+<div class="container user-index-all">
+  <table class="table table-striped user-all">
+    <thead>
+    <tr>
+      <td>Face</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Registration date</td>
+      <td>Follow</td>
+    </tr>
+    </thead>
+    <tbody id="all-users">
+    <% for user in @users %>
+        <% if !is_current_user?(user)%>
+            <tr>
+              <td><%= avatar(user,"?s=30") %></td>
+              <td><%= user.name %></td>
+              <td><%= user.email %></td>
+              <td><%= local_time(user.created_at,"%Y-%m-%d")%></td>
+              <td><a class="btn btn-xs btn-success btn-follow">Follow</a></td>
+            </tr>
+        <% end %>
+    <% end %>
+    </tbody>
+  </table>
+  <%= will_paginate %>
+</div>
+<%= javascript_include_tag "users.js" %>

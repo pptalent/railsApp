@@ -9,6 +9,7 @@ RailsApp::Application.routes.draw do
   match "/signup",to:"users#new",via:"get"
   match "/login",to:"sessions#new",via:"get"
   match "/logout",to:"sessions#destroy",via:"delete"
+  #match "/users-all",to:"users#all_users",via:"get"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -15,15 +15,16 @@
     %>
     <ul class="nav nav-pills pull-right main" >
       <li><%= link_to "Home",root_path %></li>
+      <li><%= link_to "People",users_path %></li>
       <li><%= link_to "Contact",help_path %></li>
       <% if sign_in? %>
-          <% user=current_user %>
+          <% user= current_user %>
           <li class="dropdown user-header-login">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= user.name %> <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li><%=link_to "Profile",user %></li>
-              <li><%=link_to "Setting",'#' %></li>
+              <li><%=link_to "Setting",edit_user_path(user) %></li>
               <li class="divider"></li>
 
               <li><%=link_to "Log out",logout_path,class:"log-out",method:"delete"%></li>
