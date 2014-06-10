@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   before_create do
     add_remember_token()
   end
+  has_many :microposts,dependent: :destroy
 
   validates :name,presence:true,
                  length:{maximum:50}
@@ -15,7 +16,7 @@ class User < ActiveRecord::Base
                   uniqueness:{ case_sensitive:false  }
 
   has_secure_password
-  validate :password,length:{minimum:1}
+  validates :password,length:{minimum:1}
 
   def User.create_remember_token
     SecureRandom.urlsafe_base64

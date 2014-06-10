@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def show
     @user=User.find(params[:id])
+    @microposts=@user.microposts.paginate(page:params[:page],per_page:10)
   end
   def new
     @user=User.new
@@ -27,11 +28,11 @@ class UsersController < ApplicationController
     end
   end
 
-  def create
+  def create;
     @user=User.new(params_limit)
     if @user.save
       sign_in(@user)
-      flash[:success]="Welcome to Wayne.twitter !"
+      flash[:success]="Welcome to PPTwitter !"
       redirect_to @user
     else
       render "new"
@@ -43,13 +44,6 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name,:email,:password,:password_confirmation)
     end
 
-    def log_in_first
-      unless sign_in?
-        flash[:warning]="Please login first"
-        session[:redirect_to]=request.fullpath
-        redirect_to login_path
-      end
-    end
 
     def correct_user
       @user=User.find(params[:id])

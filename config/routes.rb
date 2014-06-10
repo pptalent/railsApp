@@ -2,6 +2,7 @@ RailsApp::Application.routes.draw do
   #这个users是Controller users
   resources :users
   resources :sessions,only:[:new,:create,:destroy]
+  resources :microposts,only:[:create,:destroy]
 
   root to:"static_page#home"
   match "/about", to:"static_page#about",via:"get"

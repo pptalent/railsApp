@@ -1,7 +1,40 @@
 <% provide(:title,"home") %>
-<div class="home-container">
-  <%= link_to "","http://instagram.com/pptalent",class:"wzx" %>
-  <h3>Welcome to Wayne.Twitter</h3>
-  <p>I made it by ruby on rails, pretty cool : )</p>
-  <%= link_to "Sign up",signup_path,class:"btn btn-lg btn-warning"%>
-</div>
+<% if sign_in? %>
+    <div class="container home-user">
+      <% if @micropost.errors.any? %>
+          <div class="bs-callout bs-callout-danger">
+            <h4>Opoos , you got <%= pluralize(@micropost.errors.count,"error") %></h4>
+            <ul>
+              <% @micropost.errors.full_messages.each do |error| %>
+                  <li>* <%= error %></li>
+              <% end %>
+            </ul>
+          </div>
+      <%end%>
+      <% if flash %>
+        <% flash.each do |key,value|%>
+              <div class="alert alert-<%= key %>"><%= value %> </div>
+        <% end %>
+      <%end%>
+      <div class="user">
+        <a class="link-user" href="<%= user_path(current_user) %>" title="<%= current_user.name %>" >
+          <%= avatar(current_user,"?s=60") %>
+        </a>
+        <%= form_for(@micropost) do |f| %>
+            <%= f.text_area :content,placeholder:"say something ...",class:"form-control" %>
+            <%= f.submit "publish",class:"btn btn-warning btn-default" %>
+        <% end %>
+      </div>
+      <div class="talking">
+        <p><span>People</span><span>&nbsp;were&nbsp;</span><span>talking about&nbsp;</span>.....</p>
+      </div>
+    </div>
+<% else %>
+    <div class="home-container">
+      <%= link_to "","http://instagram.com/pptalent",class:"wzx" %>
+      <h3>Welcome to Wayne.Twitter</h3>
+      <p>I made it by ruby on rails, pretty cool : )</p>
+      <%= link_to "Sign up",signup_path,class:"btn btn-lg btn-warning"%>
+    </div>
+<%end%>
+

@@ -5,4 +5,8 @@ FactoryGirl.define do
     password "1111"
     password_confirmation "1111"
   end
+  factory :micropost do
+    content "my twitter"
+    user
+  end
 end

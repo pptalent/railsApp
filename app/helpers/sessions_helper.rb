@@ -38,4 +38,13 @@ module SessionsHelper
     end
   end
 
+  def log_in_first
+    unless sign_in?
+      flash[:warning]="Please login first"
+      session[:redirect_to]=request.fullpath
+      redirect_to login_path
+    end
+  end
+
+
 end

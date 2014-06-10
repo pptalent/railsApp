@@ -34,4 +34,16 @@ describe "AuthenticatePages" do
     end
   end
 
+  describe "microposts about" do
+    let(:user){FactoryGirl.create(:user)}
+    describe "create micropost" do
+      before{ post microposts_path }
+      it{ expect(response).to redirect_to(login_path)}
+    end
+    describe "delete wrong" do
+      before{ delete micropost_path(FactoryGirl.create(:micropost)) }
+      it{ expect(response).to redirect_to(login_path)}
+    end
+  end
+
 end

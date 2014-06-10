@@ -1,0 +1,20 @@
+class MicropostsController < ApplicationController
+  before_action :log_in_first,only:[:create,:destroy]
+  def create
+    #build(content:params[:micropost][:content])
+    @micropost=current_user.microposts.build(limit_params)
+    if @micropost.save
+      flash[:success]="publish success :) "
+      redirect_to root_path
+    else
+      render "static_page/home"
+    end
+  end
+  def destroy
+
+  end
+  def limit_params
+    #post过来的params中取出micropost这个key，然后只用里面content这个key
+    params.require(:micropost).permit(:content)
+  end
+end

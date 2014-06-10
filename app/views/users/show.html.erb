@@ -6,12 +6,23 @@
   <div class="user-header-left">
     <%= avatar(@user) %>
     <p class="user-name"><%= @user.name%></p>
+    <div class="user-info">
+      <p><%= @user.microposts.count %></p>
+      <p>Twitters</p>
+    </div>
+    <div class="user-info">
+      <p>0</p>
+      <p>Following</p>
+    </div>
+    <div class="user-info">
+      <p>0</p>
+      <p>Followers</p>
+    </div>
   </div>
   <div class="user-header-right">
-
+    <ul class="microposts">
+      <%= render @microposts %>
+    </ul>
+    <%= will_paginate @microposts %>
   </div>
-
-  <p><%= @user.email%></p>
-  <p><%= @user.created_at %></p>
-  <%= debug(params) if Rails.env.development? %>
 </div>

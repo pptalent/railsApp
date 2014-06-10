@@ -1,3 +1,4 @@
+@import "style";
 .home-container{
   text-align: center;
   padding-top:50px;
@@ -22,5 +23,69 @@
   }
   .btn{
     padding:10px 70px;
+  }
+}
+.home-user{
+  .user{
+    &:after{
+      clear:both;
+      content:"";
+      display:block;
+    }
+    width:80%;
+    margin:10px auto 35px;
+    .link-user{
+      display:block;
+      width:60px;
+      height:60px;
+      float:left;
+      margin-left:7%;
+      .user-avatar{
+        border-radius:60px;
+        pointer-events:none;
+      }
+    }
+
+    .new_micropost{
+      float:left;
+      width:70%;
+      margin-top:0px;
+      margin-left:10px;
+      textarea{
+        height:60px;
+        max-height:100px;
+        min-height:60px;
+        width:100%;
+        max-width:100%;
+        min-width:100%;
+      }
+      .btn{
+        float:right;
+        width:120px;
+        margin-top:10px;
+      }
+
+    }
+  }
+  .talking{
+    width:80%;
+    margin:0 auto 50px;
+    &>p{
+      border-bottom:1px solid #ddd;
+      padding-bottom:5px;
+      margin-bottom:10px;
+      color:#9d9d9d;
+      &>span{
+        &:nth-of-type(1){
+          color:$primary
+        }
+        &:nth-of-type(2){
+          color:$orange
+        }
+        &:nth-of-type(3){
+          color:$red
+        }
+      }
+    }
   }
 }
