@@ -31,3 +31,25 @@ $primary:#428BCA;
     }
   }
 }
+@mixin border-radius($radius){
+  border-radius:$radius;
+  -webkit-border-radius:$radius;
+  -moz-border-radius:$radius;
+}
+@mixin clear{
+  content:"";
+  display:block;
+  clear:both;
+}
+@mixin box-sizing{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@mixin word-break{
+  word-break: break-all;
+  word-wrap: break-word;
+}
+@mixin transition($element){
+  transition:$element 0.25s ease-out;
+}

@@ -24,6 +24,9 @@ class User < ActiveRecord::Base
   def User.digest_remember_token(token)
     Digest::SHA1.hexdigest(token.to_s)
   end
+  def feed
+
+  end
 
   private
   #这里之所以不是User.method是因为这个方法应该是针对User instance而非class的，否则self没法指向正确地对象

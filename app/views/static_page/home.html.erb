@@ -27,6 +27,23 @@
       </div>
       <div class="talking">
         <p><span>People</span><span>&nbsp;were&nbsp;</span><span>talking about&nbsp;</span>.....</p>
+        <ul class="content-list">
+          <% if(@feeds) %>
+              <% @feeds.each do |feed| %>
+                  <li>
+                    <a class="link-user" href="<%= user_path(feed.user) %>" title="<%= feed.user.name %>" >
+                      <%= avatar(feed.user,"?s=40") %>
+                    </a>
+                    <p><%= feed.content %></p>
+                    <a class="comment"><i class="glyphicon glyphicon-send"></i> comment</a>
+                  </li>
+              <% end %>
+          <% end %>
+        </ul>
+        <% if(@feeds) %>
+            <%=will_paginate @feeds %>
+        <% end %>
+
       </div>
     </div>
 <% else %>
