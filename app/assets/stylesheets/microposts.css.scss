@@ -1,9 +1,12 @@
+@import "style";
+
 ul.microposts{
   list-style-type: none;
   li{
     border-bottom:1px solid rgba(0,0,0,0.1);
     padding:16px 4px;
     p{
+      width:85%;
       margin:0px;
       &:first-of-type{
         font-size:15px;
@@ -14,6 +17,23 @@ ul.microposts{
         font-size:13px;
       }
     }
+    &:hover {
+      display:block;
+    }
   }
-
+  a{
+    float:right;
+    position:relative;
+    top:-10px;
+    cursor: pointer;
+    font-size:13px;
+    color:$red;
+    right:5px;
+//    display:none;
+    @include transition(color);
+    &:hover{
+      display:block;
+      color:darken($red,20%);
+    }
+  }
 }

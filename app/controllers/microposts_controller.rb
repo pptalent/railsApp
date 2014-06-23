@@ -11,7 +11,13 @@ class MicropostsController < ApplicationController
     end
   end
   def destroy
-
+    puts params
+    @micropost=current_user.microposts.find_by(id:params[:id])
+    if !@micropost.nil?
+      flash[:success]="delete success"
+      @micropost.destroy
+    end
+    redirect_to user_path(current_user)
   end
   def limit_params
     #post过来的params中取出micropost这个key，然后只用里面content这个key
