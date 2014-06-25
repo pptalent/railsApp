@@ -6,4 +6,5 @@ http://pptalent.heroku.com , rails is awesome in building dynamic website .
 As a front-end engineer , my next step is node.js and angular.js 
 
 If u want to learn ruby on rails ,recommend the book《Ruby on Rails Tutorial》
+
 u can find Chinese version in https://sellfy.com/p/qwyU/ 
