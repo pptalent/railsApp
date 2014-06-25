@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a practice i learned from ruby on rails , try to build sth like twitter , u can get it on pptalent.heroku.com ,
+rails is awesome in building dynamic website .
+as a front-end engineer , my next step is node.js and angular.js 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+If u want to learn ruby on rails ,recommend the book《Ruby on Rails Tutorial》
+u can find Chinese version in https://sellfy.com/p/qwyU/ 
