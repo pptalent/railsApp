@@ -2,10 +2,11 @@
 
 This is a practice i learned from ruby on rails , try to build sth like twitter 
 
-u can get it on http://pptalent.heroku.com , rails is awesome in building dynamic website .
+You can get it on http://pptalent.heroku.com , rails is awesome in building dynamic website .
 
 As a front-end engineer , my next step is node.js and angular.js 
 
-If u want to learn ruby on rails ,recommend the book《Ruby on Rails Tutorial》
+If you want to learn ruby on rails , recommend the book《Ruby on Rails Tutorial》by Michael Hartl ,especially
+you are a beginner developer in this area , you definitely will get more things than just rails 
 
-u can find Chinese version in https://sellfy.com/p/qwyU/ 
+You can find Chinese version of this book in https://sellfy.com/p/qwyU/ 
