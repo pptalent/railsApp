@@ -6,7 +6,8 @@ You can get it on http://pptalent.heroku.com , rails is awesome in building dyna
 
 As a front-end engineer , my next step is node.js and angular.js 
 
-If you want to learn ruby on rails , recommend the book《Ruby on Rails Tutorial》by Michael Hartl ,especially
-you are a beginner developer in this area , you definitely will get more things than just rails 
+If you want to learn ruby on rails , recommend the book《Ruby on Rails Tutorial》by Michael Hartl ,
+especially you are a beginner developer in this area , you definitely will get more things than 
+just rails 
 
 You can find Chinese version of this book in https://sellfy.com/p/qwyU/ 
