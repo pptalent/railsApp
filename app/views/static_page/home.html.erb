@@ -35,7 +35,9 @@
                       <%= avatar(feed.user,"?s=40") %>
                     </a>
                     <p><%= feed.content %></p>
-                    <a class="comment"><i class="glyphicon glyphicon-send"></i> comment</a>
+                    <a class="comment" id="<%= feed.id %>"><i class="glyphicon glyphicon-send"></i> comment</a>
+                  </li>
+                  <li class="comment-list">
                   </li>
               <% end %>
           <% end %>

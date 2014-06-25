@@ -3,6 +3,7 @@ RailsApp::Application.routes.draw do
   resources :users
   resources :sessions,only:[:new,:create,:destroy]
   resources :microposts,only:[:create,:destroy]
+  resources :comments,only:[:create,:destroy]
 
   root to:"static_page#home"
   match "/about", to:"static_page#about",via:"get"
@@ -10,6 +11,7 @@ RailsApp::Application.routes.draw do
   match "/signup",to:"users#new",via:"get"
   match "/login",to:"sessions#new",via:"get"
   match "/logout",to:"sessions#destroy",via:"delete"
+  match "/comments/list",to:"comments#list",via:"get"
   #match "/users-all",to:"users#all_users",via:"get"
 
 

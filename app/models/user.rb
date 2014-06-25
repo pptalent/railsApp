@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
     add_remember_token()
   end
   has_many :microposts,dependent: :destroy
-
+  has_many :comments
   validates :name,presence:true,
                  length:{maximum:50}
 

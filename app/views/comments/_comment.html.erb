@@ -1,0 +1,14 @@
+<%= form_for(comment) do |c| %>
+    <%= c.text_area :content,placeholder:"leave your comment here ...",class:"form-control" %>
+    <%= c.submit "comment",class:"btn btn-primary" %>
+<% end %>
+<ul>
+  <% comments.each do |comment| %>
+      <li>
+        <%= link_to userFrom(comment.user_id).name,user_path(userFrom(comment.user_id)),class:"comment-user"  %>
+        <p><%= comment.content %></p>
+      </li>
+  <% end %>
+</ul>
+<%= will_paginate comments %>
+

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15656dc8-deb6-4542-8c4b-6f53bd66144b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/microposts/_micropost.html.erb" afterPath="$PROJECT_DIR$/app/views/microposts/_micropost.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/microposts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_page/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_page/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/micropost.rb" afterPath="$PROJECT_DIR$/app/models/micropost.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="railsApp.iws" />
@@ -28,54 +32,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="microposts.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="25" selection-start="628" selection-end="628" vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="660">
+            <state line="15" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.3504673" vertical-offset="0" max-vertical-offset="642">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="666" selection-end="666" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="495">
+            <state line="14" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
               <folding>
-                <marker date="1402317657000" expanded="true" signature="32:665" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="170:508" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="269:345" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="373:422" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="450:499" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="542:658" placeholder="..." />
-                <marker date="1402317657000" expanded="true" signature="570:612" placeholder="..." />
+                <marker date="1403698477000" expanded="true" signature="194:421" placeholder="..." />
+                <marker date="1403698477000" expanded="true" signature="240:403" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_micropost.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_page/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="50" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="180">
+            <state line="23" column="74" selection-start="928" selection-end="928" vertical-scroll-proportion="-2.0" vertical-offset="297" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+      <file leaf-file-name="comment.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/comment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+            <state line="6" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="microposts_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="7" selection-start="564" selection-end="564" vertical-scroll-proportion="0.42056075" vertical-offset="0" max-vertical-offset="642">
+            <state line="23" column="25" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -94,15 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/test.rb" />
-        <option value="$PROJECT_DIR$/app/views/share/user_errors.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/user_errors.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/session_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/session/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_user_errors.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140524055637_add_remember_token_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/spec/support/utilities.rb" />
         <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
@@ -110,7 +100,6 @@
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/mustache_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/users.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/lib/tasks/fake_user.rake" />
         <option value="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140603115820_add_admin_to_user.rb" />
@@ -124,7 +113,6 @@
         <option value="$PROJECT_DIR$/lib/tasks/fake_microposts.rake" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/micropost.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/spec/requests/authenticate_pages_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories.rb" />
@@ -136,15 +124,26 @@
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
         <option value="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/micropost.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/static_page/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss" />
         <option value="$PROJECT_DIR$/app/views/microposts/_micropost.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140624110520_create_comments.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140624120709_add_index_to_comments.rb" />
+        <option value="$PROJECT_DIR$/app/models/micropost.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140624122416_add_to_user_comment.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/comments_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/comment.js" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
       </list>
     </option>
   </component>
@@ -179,8 +178,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -431,24 +430,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="railsApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="railsApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -631,6 +612,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="railsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="railsApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -756,7 +759,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project/railsEpm" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
@@ -917,7 +920,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="713" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -959,58 +962,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/static_page_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/help.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/about.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140524055637_add_remember_token_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/users_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/static_page_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/sessions_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/utilities.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="79" selection-end="79" vertical-scroll-proportion="0.093457945" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="717" selection-end="717" vertical-scroll-proportion="0.70873785" vertical-offset="147" max-vertical-offset="765" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sessions.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="28" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225" />
@@ -1031,21 +982,9 @@
         <state line="22" column="17" selection-start="933" selection-end="933" vertical-scroll-proportion="0.5140187" vertical-offset="0" max-vertical-offset="642" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="687" selection-end="687" vertical-scroll-proportion="0.37383178" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140603115820_add_admin_to_user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140604052254_create_microposts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
@@ -1062,9 +1001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/fake_microposts.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="37" selection-start="200" selection-end="200" vertical-scroll-proportion="0.14018692" vertical-offset="0" max-vertical-offset="642">
-          <folding />
-        </state>
+        <state line="6" column="37" selection-start="200" selection-end="200" vertical-scroll-proportion="0.14018692" vertical-offset="0" max-vertical-offset="642" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/static_page_helper.rb">
@@ -1077,11 +1014,6 @@
         <state line="89" column="18" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.684466" vertical-offset="912" max-vertical-offset="2460">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.25700936" vertical-offset="0" max-vertical-offset="642" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/user_pages_spec.rb">
@@ -1114,21 +1046,9 @@
         <state line="15" column="42" selection-start="401" selection-end="401" vertical-scroll-proportion="0.37815127" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19417475" vertical-offset="0" max-vertical-offset="618" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_user_errors.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="235" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="246" selection-end="246" vertical-scroll-proportion="0.11682243" vertical-offset="0" max-vertical-offset="642">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
@@ -1146,54 +1066,9 @@
         <state line="15" column="14" selection-start="468" selection-end="468" vertical-scroll-proportion="0.36407766" vertical-offset="0" max-vertical-offset="618" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="28" selection-start="769" selection-end="769" vertical-scroll-proportion="0.7281553" vertical-offset="210" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/static_pages_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="41" selection-end="41" vertical-scroll-proportion="0.023364486" vertical-offset="0" max-vertical-offset="642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="663" selection-end="663" vertical-scroll-proportion="0.58411217" vertical-offset="75" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="158" selection-end="158" vertical-scroll-proportion="0.1588785" vertical-offset="3" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/micropost.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="51" selection-start="227" selection-end="227" vertical-scroll-proportion="0.12116317" vertical-offset="0" max-vertical-offset="619" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="507" selection-end="507" vertical-scroll-proportion="0.3271028" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss">
@@ -1203,59 +1078,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140604052254_create_microposts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="17" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.41747573" vertical-offset="537" max-vertical-offset="1155">
+        <state line="4" column="12" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/home.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="80" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.49029127" vertical-offset="252" max-vertical-offset="945">
+        <state line="49" column="11" selection-start="816" selection-end="816" vertical-scroll-proportion="3.625" vertical-offset="822" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="25" selection-start="628" selection-end="628" vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="660">
+        <state line="35" column="25" selection-start="628" selection-end="628" vertical-scroll-proportion="0.77310926" vertical-offset="65" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140624122416_add_to_user_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.12116317" vertical-offset="0" max-vertical-offset="619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140624110520_create_comments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.23364486" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140624120709_add_index_to_comments.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="107" selection-end="107" vertical-scroll-proportion="0.07009346" vertical-offset="0" max-vertical-offset="642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/comments_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="36" selection-end="36" vertical-scroll-proportion="0.023364486" vertical-offset="0" max-vertical-offset="642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.36915886" vertical-offset="3" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="123" selection-end="123" vertical-scroll-proportion="0.07281554" vertical-offset="0" max-vertical-offset="618" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="730" selection-end="730" vertical-scroll-proportion="0.4361874" vertical-offset="0" max-vertical-offset="619" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="49" selection-start="250" selection-end="250" vertical-scroll-proportion="0.14018692" vertical-offset="0" max-vertical-offset="642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/micropost.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.18691589" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/microposts_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="0.19417475" vertical-offset="0" max-vertical-offset="618">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="666" selection-end="666" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="495">
-          <folding>
-            <marker date="1402317657000" expanded="true" signature="32:665" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="170:508" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="269:345" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="373:422" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="450:499" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="542:658" placeholder="..." />
-            <marker date="1402317657000" expanded="true" signature="570:612" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="50" selection-start="195" selection-end="195" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="180">
+        <state line="23" column="31" selection-start="603" selection-end="603" vertical-scroll-proportion="0.55825245" vertical-offset="0" max-vertical-offset="618">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+        <state line="5" column="21" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="564" selection-end="564" vertical-scroll-proportion="0.42056075" vertical-offset="0" max-vertical-offset="642">
+        <state line="13" column="15" selection-start="405" selection-end="405" vertical-scroll-proportion="0.31502423" vertical-offset="0" max-vertical-offset="619">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="3" selection-start="410" selection-end="410" vertical-scroll-proportion="0.4906542" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_page.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="5" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.7815534" vertical-offset="507" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="212" selection-end="212" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="22" selection-start="41" selection-end="41" vertical-scroll-proportion="0.023364486" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="22" selection-start="341" selection-end="341" vertical-scroll-proportion="0.28037384" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="386" selection-end="386" vertical-scroll-proportion="0.31502423" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="46" selection-start="124" selection-end="124" vertical-scroll-proportion="0.07009346" vertical-offset="0" max-vertical-offset="642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="74" selection-start="928" selection-end="928" vertical-scroll-proportion="-2.0" vertical-offset="297" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
+          <folding>
+            <marker date="1403698477000" expanded="true" signature="194:421" placeholder="..." />
+            <marker date="1403698477000" expanded="true" signature="240:403" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="25" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.3504673" vertical-offset="0" max-vertical-offset="642">
           <folding />
         </state>
       </provider>

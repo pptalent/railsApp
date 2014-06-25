@@ -16,3 +16,4 @@
 //= require bootstrap
 //= require mustache
 //= require local_time
+//= require comment
