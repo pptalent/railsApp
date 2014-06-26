@@ -58,21 +58,24 @@
             .on("click",".trash-icon",function(){
                 var $this=$(this),
                     comment_id=$this.attr("id"),
-                    $comment_count=$(this).parents(".comment-list").prev().find(".comment-count");;
-                $.ajax({
-                    url:"/comments/"+comment_id,
-                    type:"DELETE",
-                    success:function(data){
-                        if(data.result){
-                           $this.parents("li").eq(0).remove();
-                            var count= parseInt( $comment_count.text() );
-                            $comment_count.text( --count );
+                    $comment_count=$(this).parents(".comment-list").prev().find(".comment-count");
+                if(confirm("Delete this comment ?")){
+                    $.ajax({
+                        url:"/comments/"+comment_id,
+                        type:"DELETE",
+                        success:function(data){
+                            if(data.result){
+                                $this.parents("li").eq(0).remove();
+                                var count= parseInt( $comment_count.text() );
+                                $comment_count.text( --count );
+                            }
+                            else{
+                                alert("sth wrong happened !");
+                            }
                         }
-                        else{
-                            alert("sth wrong happened !");
-                        }
-                    }
-                })
+                    })
+                }
+
             })
     })
 })()

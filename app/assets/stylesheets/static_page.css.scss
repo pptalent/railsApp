@@ -34,11 +34,15 @@
           @include border-radius($img-width);
         }
         &>.glyphicon{
-          position:absolute;
-          right: 11px;
-          top: 2px;
-          color:rgba(0,0,0,0.18);
+//          position:absolute;
+          right: 0px;
+          top: -8px;
+          color:rgba(0,0,0,0.21);
           font-size:12px;
+
+        }
+        &:hover{
+          text-decoration:none;
         }
       }
 
