@@ -1,7 +1,110 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "style.css.scss";
 li.comment-list{
-  height:20px;
-
+  display:none;
+  padding:10px 0px 15px;
+  background:rgba(0,0,0,0.03);
+  &:after{
+    @include clear;
+  }
+  .form{
+    textarea{
+      $width:94%;
+      $height:48px;
+      width:$width;
+      max-width:$width;
+      min-width:$width;
+      margin:10px auto 0;
+      height:$height;
+      max-height:$height;
+      min-height:$height;
+      font-size:12px;
+      resize:none;
+    }
+    .btn{
+      padding:3px 12px;
+      font-size:13px;
+      float:right;
+      margin-top:5px;
+      margin-right:3%;
+    }
+    &:after{
+      @include clear;
+    }
+  }
+  .bs-callout{
+    ul{
+      li{
+        font-size:12px;
+      }
+    }
+  }
+  ul.comment-content-list{
+    padding:0px 3%;
+    font-size:12px;
+    margin-top:3px;
+    list-style:none;
+    li{
+      cursor:default;
+      width:100%;
+      border-bottom:1px dashed rgba(0,0,0,0.1);
+      display:table;
+      table-layout:auto;
+      padding:8px 0px;
+      position:relative;
+      a{
+        display:table-cell;
+        white-space:nowrap;
+        vertical-align:middle;
+        table-layout:fixed;
+      }
+      p{
+        display:table-cell;
+        padding-left:5px;
+        @include word-break;
+        margin:0px;
+        vertical-align:middle;
+        line-height:15px;
+      }
+      span{
+        width:100px;
+        display:table-cell;
+        font-size:10px;
+        vertical-align:bottom;
+        padding:0 5px;
+        color:#888;
+        white-space:nowrap;
+        text-align:right;
+      }
+      &:hover .trash-icon
+      {
+        display:block;
+      }
+      .trash-icon{
+        position:absolute;
+        right:10px;
+        top:10px;
+        font-size:12px;
+        cursor:pointer;
+        color:$red;
+        @include transition(color);
+        display:none;
+        &:hover{
+          display:block;
+          color:darken($red,20%);
+        }
+      }
+    }
+  }
+  //.pagination{
+  //  li{
+  //    a{
+  //      padding:3px 8px
+  //    }
+  //  }
+  //   margin:7px 13px 0 0;
+  //   font-size:11px;
+  //}
 }

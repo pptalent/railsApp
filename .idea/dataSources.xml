@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="611588334">
-    <data-source source="LOCAL" name="Rails railsApp: development" uuid="fc182121-74ec-427b-a460-c9af7353f67e">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails railsApp: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="fc182121-74ec-427b-a460-c9af7353f67e">
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails railsApp: test" uuid="f0b570bc-1a88-439a-90c3-0a32bf66559b">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails railsApp: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f0b570bc-1a88-439a-90c3-0a32bf66559b">
       <libraries />
     </data-source>
   </component>

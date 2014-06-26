@@ -4,7 +4,7 @@ ul.microposts{
   list-style-type: none;
   li{
     border-bottom:1px solid rgba(0,0,0,0.1);
-    padding:16px 4px;
+    padding:10px 4px;
     p{
       width:85%;
       margin:0px;
@@ -14,7 +14,7 @@ ul.microposts{
       }
       &:nth-of-type(2){
         color:#9d9d9d;
-        font-size:13px;
+        font-size:11px;
       }
     }
     &:hover {
@@ -24,7 +24,7 @@ ul.microposts{
   a{
     float:right;
     position:relative;
-    top:-10px;
+    top:-19px;
     cursor: pointer;
     font-size:13px;
     color:$red;

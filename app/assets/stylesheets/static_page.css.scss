@@ -12,53 +12,52 @@
   ul.content-list{
     list-style-type: none;
     padding:0px;
-    &>li{
+    &>li:not(.comment-list){
       padding:12px 0;
       border-bottom:1px solid rgba(0,0,0,0.1);
-      position:relative;
+      display:table;
       &:after{
         @include clear;
         width:100%;
       }
+      width:100%;
       $img-width:40px;
+      $margin-right:25px;
       &>a.link-user{
-        display:block;
-        width:$img-width;
+        width:$img-width + $margin-right;
         height:$img-width;
-        float:left;
-        box-sizing:border-box;
+        display:table-cell;
+        margin-right:$margin-right;
         position:relative;
-        margin-right:20px;
+        vertical-align:middle;
         &>img{
           @include border-radius($img-width);
         }
-        &:after{
-          content:":";
+        &>.glyphicon{
           position:absolute;
-          top:6px;
-          right:-12px;
-          font-size:20px;
-          color:#777;
+          right: 11px;
+          top: 2px;
+          color:rgba(0,0,0,0.18);
+          font-size:12px;
         }
       }
+
       &>p{
-        height:$img-width;
-        float:left;
+        display:table-cell;
         @include box-sizing;
-        width:calc(100% - 70px);
-        width:-moz-calc(100% - 140px);
+        width:80%;
         @include word-break;
         margin:0px;
-        line-height:40px;
+        line-height:17px;
         color:#666;
+        vertical-align:middle;
       }
       &>.comment{
         font-size:12px;
         cursor:pointer;
-        float:left;
-        margin-left:0px;
-        position:absolute;
-        bottom:13px;
+        display:table-cell;
+        vertical-align:bottom;
+        text-align:center;
         @include transition(color);
         &:hover{
             color:#222;

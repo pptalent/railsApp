@@ -11,7 +11,6 @@ class MicropostsController < ApplicationController
     end
   end
   def destroy
-    puts params
     @micropost=current_user.microposts.find_by(id:params[:id])
     if !@micropost.nil?
       flash[:success]="delete success"

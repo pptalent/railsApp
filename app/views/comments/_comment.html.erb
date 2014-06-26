@@ -1,14 +1,29 @@
-<%= form_for(comment) do |c| %>
-    <%= c.text_area :content,placeholder:"leave your comment here ...",class:"form-control" %>
-    <%= c.submit "comment",class:"btn btn-primary" %>
+<div class="form">
+  <textarea placeholder="leave your comment here ..." class="form-control"></textarea>
+  <input type="button" class="btn btn-warning comment-submit-button" value="comment" id='<%= @comment.micropost_id%>'/>
+</div>
+<% if @comment.errors.any? %>
+  <div class="bs-callout bs-callout-danger">
+     <h4>Opoos , you got <%= pluralize(@comment.errors.count,"error") %></h4>
+     <ul>
+       <% @comment.errors.full_messages.each do |error| %>
+            <li>* <%= error %></li>
+        <% end %>
+      </ul>
+   </div>
 <% end %>
-<ul>
-  <% comments.each do |comment| %>
+<ul class="comment-content-list">
+  <% @comments.each do |comment| %>
       <li>
-        <%= link_to userFrom(comment.user_id).name,user_path(userFrom(comment.user_id)),class:"comment-user"  %>
-        <p><%= comment.content %></p>
-      </li>
+        <% user_name=userFrom(comment.user_id).name %>
+        <% user_id=comment.user_id %>
+        <p><%= link_to user_name+" :",user_path(User.find(user_id)),:class=>"comment-user"  %>
+        <%= comment.content %></p>
+        <span><%= time_ago_in_words(comment.created_at) %></span>
+        <% if comment.user_id==current_user.id %>
+            <i class="glyphicon glyphicon-remove trash-icon" id="<%= comment.id %>"></i>
+        <% end %>
+     </li>
   <% end %>
 </ul>
-<%= will_paginate comments %>
 

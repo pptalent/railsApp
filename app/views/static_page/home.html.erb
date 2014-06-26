@@ -33,11 +33,14 @@
                   <li>
                     <a class="link-user" href="<%= user_path(feed.user) %>" title="<%= feed.user.name %>" >
                       <%= avatar(feed.user,"?s=40") %>
+                      <i class="glyphicon glyphicon-bullhorn"></i>
                     </a>
+
                     <p><%= feed.content %></p>
-                    <a class="comment" id="<%= feed.id %>"><i class="glyphicon glyphicon-send"></i> comment</a>
+                    <a class="comment" id="<%= feed.id %>" state="close"><i class="glyphicon glyphicon-send"></i> comments(<span class="comment-count"><%= feed.comments.count %></span>)</a>
                   </li>
                   <li class="comment-list">
+                      <p>&nbsp;&nbsp;&nbsp;I'm loading ....</p>
                   </li>
               <% end %>
           <% end %>
@@ -48,12 +51,14 @@
 
       </div>
     </div>
+
 <% else %>
     <div class="home-container">
-      <%= link_to "","http://instagram.com/pptalent",class:"wzx" %>
+      <%= link_to "","http://instagram.com/pptalent",:class=>"wzx" %>
       <h3>Welcome to Wayne.Twitter</h3>
       <p>I made it by ruby on rails, pretty cool : )</p>
-      <%= link_to "Sign up",signup_path,class:"btn btn-lg btn-warning"%>
+      <%= link_to "Sign up",signup_path,:class=>"btn btn-lg btn-warning"%>
     </div>
 <%end%>
 
+<%= javascript_include_tag "comment.js" %>
