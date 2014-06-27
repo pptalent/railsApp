@@ -21,8 +21,8 @@
           <%= avatar(current_user,"?s=60") %>
         </a>
         <%= form_for(@micropost) do |f| %>
-            <%= f.text_area :content,placeholder:"say something ...",class:"form-control" %>
-            <%= f.submit "publish",class:"btn btn-warning btn-default" %>
+            <%= f.text_area :content,placeholder:"say something ...",class:"form-control",id:"my_post" %>
+            <%= f.submit "publish",class:"btn btn-warning btn-default",id:"my_post_btn" %>
         <% end %>
       </div>
       <div class="talking">
@@ -33,10 +33,8 @@
                   <li>
                     <a class="link-user" href="<%= user_path(feed.user) %>" title="<%= feed.user.name %>" >
                       <%= avatar(feed.user,"?s=40") %>
-                      <i class="glyphicon glyphicon-bullhorn"></i>
                     </a>
-
-                    <p><%= feed.content %></p>
+                    <p><a class="name"  href="<%= user_path(feed.user) %>"><%= feed.user.name %> : </a><span class="content"><%= feed.content %> </span></p>
                     <a class="comment" id="<%= feed.id %>" state="close"><i class="glyphicon glyphicon-send"></i> comments(<span class="comment-count"><%= feed.comments.count %></span>)</a>
                   </li>
                   <li class="comment-list">
@@ -60,5 +58,4 @@
       <%= link_to "Sign up",signup_path,:class=>"btn btn-lg btn-warning"%>
     </div>
 <%end%>
-
 <%= javascript_include_tag "comment.js" %>

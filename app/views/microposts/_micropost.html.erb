@@ -1,7 +1,7 @@
 <li>
   <p><%= micropost.content %></p>
   <p><%= time_ago_in_words(micropost.created_at) %></p>
-  <%= link_to 'delete',micropost,method: :delete,
-                                 data:{confirm:"Delete this pptwitter ?"}
+  <%= link_to 'delete',micropost,:method=> :delete,
+                                 :data=>{:confirm=>"Delete this pptwitter ?"}
   %>
 </li>

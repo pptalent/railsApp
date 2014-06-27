@@ -1,9 +1,16 @@
 RailsApp::Application.routes.draw do
+  get "relationships/create"
+  get "relationships/destroy"
   #这个users是Controller users
-  resources :users
-  resources :sessions,only:[:new,:create,:destroy]
-  resources :microposts,only:[:create,:destroy]
-  resources :comments,only:[:create,:destroy]
+  resources :users do
+    member do
+      get :following,:followers
+    end
+  end
+  resources :sessions,:only=>[:new,:create,:destroy]
+  resources :microposts,:only=>[:create,:destroy]
+  resources :comments,:only=>[:create,:destroy]
+  resources :relationships,:only=>[:create,:destroy]
 
   root to:"static_page#home"
   match "/about", to:"static_page#about",via:"get"

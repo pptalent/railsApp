@@ -33,7 +33,7 @@ module SessionsHelper
       redirect_to session[:redirect_to]
       session.delete(:redirect_to)
     else
-      flash[:success]="Login success"
+
       redirect_to default
     end
   end

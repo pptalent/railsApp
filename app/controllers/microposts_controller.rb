@@ -4,7 +4,6 @@ class MicropostsController < ApplicationController
     #build(content:params[:micropost][:content])
     @micropost=current_user.microposts.build(limit_params)
     if @micropost.save
-      flash[:success]="publish success :) "
       redirect_to root_path
     else
       render "static_page/home"
@@ -13,7 +12,6 @@ class MicropostsController < ApplicationController
   def destroy
     @micropost=current_user.microposts.find_by(id:params[:id])
     if !@micropost.nil?
-      flash[:success]="delete success"
       @micropost.destroy
     end
     redirect_to user_path(current_user)

@@ -1,0 +1,6 @@
+<%= form_for( current_user.relationships.find_by(followed_id:@user.id),:html=>{:method=>:delete} ) do |f| %>
+    <% if !@index.nil?%>
+        <%= f.hidden_field :index,value:@index %>
+    <% end %>
+   <%= f.submit "Bye bye",:class=>"btn btn-danger follow-btn-show-page" %>
+<% end %>

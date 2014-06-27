@@ -1,5 +1,18 @@
 (function(){
     $(document).ready(function(){
+       $("#my_post").focus();
+        $("body").on("keyup","#my_post",function(event){
+            var e=event ? event : window.event ;
+            if(e.keyCode==13){
+                $("#my_post_btn").click();
+            }
+        });
+        $("body").on("keyup",".my_post_comment",function(event){
+            var e=event ? event : window.event ;
+            if(e.keyCode==13){
+                $(this).next().click();
+            }
+        })
         $("body")
             .on("click",".comment",function(){
                 var id=$(this).attr("id");

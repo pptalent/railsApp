@@ -84,13 +84,34 @@
   }
   .user-header-right{
     box-sizing:border-box;
-    float:left;
+    float:right;
     width:65%;
+    min-height:300px;
     .pagination{
       float:right;
     }
   }
+  ///****************************************************************////
+  .follow-block{
+    box-sizing:border-box;
+    float:left;
+    width:35%;
+    form{
+      width:100%;
+      .btn{
+        width:60%;
+        margin:20px auto;
+        display:block;
+        padding:6px 0px;
+      }
+    }
+
+  }
 }
+
+
+
+
 .edit_user{
   margin-top:30px;
   width:410px;
@@ -155,5 +176,16 @@
       display: block;
       clear:all;
     }
+  }
+  td{
+    vertical-align:middle !important;
+    a{
+      cursor:pointer;
+    }
+  }
+  .follow-btn-show-page{
+    width:65px;
+    padding:4px 0px;
+    font-size:12px;
   }
 }

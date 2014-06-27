@@ -11,18 +11,30 @@
       <p>Twitters</p>
     </div>
     <div class="user-info">
-      <p>0</p>
+      <p><%= @user.followed_user.count %></p>
       <p>Following</p>
     </div>
     <div class="user-info">
-      <p>0</p>
+      <p><%= @user.follower_user.count %></p>
       <p>Followers</p>
     </div>
   </div>
+
   <div class="user-header-right">
     <ul class="microposts">
       <%= render @microposts %>
     </ul>
     <%= will_paginate @microposts %>
   </div>
+
+  <div class="follow-block">
+    <% if !is_current_user?(@user) %>
+        <% if current_user.following?(@user) %>
+            <%= render "follow"%>
+        <% else %>
+            <%= render "unfollow"%>
+        <% end %>
+    <% end %>
+  </div>
+
 </div>

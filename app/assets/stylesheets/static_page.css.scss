@@ -7,7 +7,7 @@
 {
   padding:0 13px;
   &>p{
-    margin-bottom:0px;
+    margin-bottom:0px !important;
   }
   ul.content-list{
     list-style-type: none;
@@ -16,13 +16,14 @@
       padding:12px 0;
       border-bottom:1px solid rgba(0,0,0,0.1);
       display:table;
+      position:relative;
       &:after{
         @include clear;
         width:100%;
       }
       width:100%;
       $img-width:40px;
-      $margin-right:25px;
+      $margin-right:13px;
       &>a.link-user{
         width:$img-width + $margin-right;
         height:$img-width;
@@ -33,19 +34,22 @@
         &>img{
           @include border-radius($img-width);
         }
-        &>.glyphicon{
-//          position:absolute;
-          right: 0px;
-          top: -8px;
-          color:rgba(0,0,0,0.21);
-          font-size:12px;
-
-        }
         &:hover{
           text-decoration:none;
         }
-      }
+        //&:after{
+        //  $height:24px;
+        //  content:":";
+        //  position:absolute;
+        //  right:6px;
+        //  top:50%;
+        //  height:$height;
+        //  margin-top:- $height / 2;
+        //  font-size:15px;
+        //  color:#878787;
+        //}
 
+      }
       &>p{
         display:table-cell;
         @include box-sizing;
@@ -53,8 +57,18 @@
         @include word-break;
         margin:0px;
         line-height:17px;
-        color:#666;
+        color:#222;
         vertical-align:middle;
+        font-size:13px;
+        .name{
+          display:block;
+          font-size:12px;
+          font-weight:400;
+          color:#9d9d9d !important;
+        }
+        .content{
+
+        }
       }
       &>.comment{
         font-size:12px;

@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
-  before_action :log_in_first,only:[:edit,:update,:index]
-  before_action :correct_user,only:[:edit,:update]
+  before_action :log_in_first,:only=>[:edit,:update,:index]
+  before_action :correct_user,:only=>[:edit,:update]
 
   def index
       @users=User.paginate(page:params[:page],:per_page=>23)
+
   end
 
   def show
@@ -32,11 +33,19 @@ class UsersController < ApplicationController
     @user=User.new(params_limit)
     if @user.save
       sign_in(@user)
-      flash[:success]="Welcome to PPTwitter !"
+      flash[:success]="Welcome to PPTwitter ! 欢迎来到PPTwitter"
       redirect_to @user
     else
       render "new"
     end
+  end
+
+  def following
+
+  end
+
+  def followers
+
   end
 
   private

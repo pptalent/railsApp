@@ -11,13 +11,22 @@
     </thead>
     <tbody id="all-users">
     <% for user in @users %>
+        <% @user=user %>
+        <% @index=true %>
         <% if !is_current_user?(user)%>
             <tr>
-              <td><%= avatar(user,"?s=30") %></td>
-              <td><%= user.name %></td>
+              <td><a href="/users/<%= user.id%>"><%= avatar(user,"?s=30") %></a></td>
+              <td><a href="/users/<%= user.id%>"><%= user.name %></a></td>
               <td><%= user.email %></td>
               <td><%= local_time(user.created_at,"%Y-%m-%d")%></td>
-              <td><a class="btn btn-xs btn-success btn-follow">Follow</a></td>
+              <td>
+                <% if current_user.following?(@user) %>
+                    <%= render "follow"%>
+                <% else %>
+                    <%= render "unfollow"%>
+                <% end %>
+
+              </td>
             </tr>
         <% end %>
     <% end %>

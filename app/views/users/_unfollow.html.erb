@@ -1,0 +1,7 @@
+<%= form_for( current_user.relationships.build(followed_id:@user.id) ) do |f| %>
+    <% if !@index.nil?%>
+        <%= f.hidden_field :index,value:@index %>
+    <% end %>
+    <%= f.hidden_field :followed_id  %>
+    <%= f.submit "Follow",:class=>"btn btn-success follow-btn-show-page" %>
+<% end %>
